@@ -22,27 +22,31 @@ function playGame() {
         function gamePlay (player, computer) {
             if (player === "Rock" && computer === "Scissors" || player === "Paper" && computer === "Rock" || player === "Scissors" && computer === "Paper") {
                 playerWins++;
-                return `You Win!!! ${player} beats ${computer}.`;
+                return `You Win!!! ${player} beats ${computer}.
+                Your score: ${playerWins} Computer's score: ${computerWins}.`;
             } else if (player === computer) {
-                return `T's a Tie!!!`;
+                return `T's a Tie!!!
+                Your score: ${playerWins} Computer's score: ${computerWins}.`;
             } else {
                 computerWins++;
-                return `You Lose!!! ${computer} beats ${player}.`;
+                return `You Lose!!! ${computer} beats ${player}.
+                Your score: ${playerWins} Computer's score: ${computerWins}.`;
             }
         }
         
         let result = gamePlay(playerSelection, computerSelection);
+        console.log(result);
 }
 
-playgame();
-playgame();
-playgame();
-playgame();
-playgame();
+playGame();
+playGame();
+playGame();
+playGame();
+playGame();
 
-if (playWins > computerWins) {
+if (playerWins > computerWins) {
     console.log("Final Winner: You!");
-} else if (playWins < computerWins) {
+} else if (playerWins < computerWins) {
     console.log("Final Winner: Computer!");
 } else {
     console.log("T's a Tie!");
