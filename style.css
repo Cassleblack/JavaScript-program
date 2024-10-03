@@ -1,0 +1,61 @@
+body {
+    height: 100vh;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: wheat;
+    color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.display {
+    background: black;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    padding: 8px 24px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+} 
+
+#Rock, #Paper, #Scissors {
+    background: #ffffff;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 8px 24px;
+    color: #000000;
+    width: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} 
+
+#newGame {
+    background: #ffffff;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 8px 24px;
+    color: #000000;
+    width: 120px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+} 
